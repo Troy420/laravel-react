@@ -1,0 +1,41 @@
+.area {
+    &--header {
+        display: flex;
+        max-height: 75px;
+        background-color: #333;
+
+        .region {
+            &--header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                // background-color: red;
+
+                .logo {
+                    img {
+                        height: 60px;
+                    }
+                }
+
+                .search {
+                    width: 60%;
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+
+                    .site-search {
+                        width: 90%;
+                    }
+                }
+
+                .login--link {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

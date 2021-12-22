@@ -1,8 +1,40 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
+@import "header";
+@import "navbar";
+@import "headline";
+@import "featured";
+@import "discover";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import "~bootstrap/scss/bootstrap";
+
+*,
+::after,
+::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}

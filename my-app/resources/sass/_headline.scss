@@ -1,0 +1,30 @@
+.headline {
+    min-height: 200px;
+    background-color: pink;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        font-size: 4rem;
+        padding: 20px 0px;
+    }
+    .bubbles {
+        height: 85px;
+        li {
+            padding: 20px 30px;
+            a {
+                text-align: center;
+                img {
+                    width: 120px;
+                    height: 120px;
+                    clip-path: circle();
+                    object-fit: contain;
+                }
+                .text {
+                    padding: 10px 0px;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
