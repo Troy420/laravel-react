@@ -5,6 +5,7 @@
     .title {
         padding: 20px 0;
         font-size: 2rem;
+        text-overflow: ellipsis;
     }
 
     .grid--view {
@@ -14,10 +15,18 @@
 
         .grid--item {
             min-width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
 
             .infos {
-                img {
-                    width: 100%;
+                .description {
+                    /* Ellipsis */
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; /* number of lines to show */
+                    line-clamp: 2;
+                    -webkit-box-orient: vertical;
                 }
             }
         }

@@ -1,12 +1,14 @@
 import React from "react";
-import GridView from "./GridView";
+import GridItem from "./GridItem";
 
 const Featured = () => {
     return (
         <>
             <div className="featured">
                 <div className="title">Popular gifts right now</div>
-                <GridView />
+                <div className="grid--view">
+                    <GridItem />
+                </div>
             </div>
         </>
     );

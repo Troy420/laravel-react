@@ -70,6 +70,7 @@
 .featured .title {
   padding: 20px 0;
   font-size: 2rem;
+  text-overflow: ellipsis;
 }
 .featured .grid--view {
   display: grid;
@@ -78,9 +79,26 @@
 }
 .featured .grid--view .grid--item {
   min-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.featured .grid--view .grid--item .infos img {
-  width: 100%;
+.featured .grid--view .grid--item .infos .description {
+  /* Ellipsis */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.discover {
+  max-width: 1340px;
+  margin: 100px auto;
+}
+.discover .title {
+  font-size: 2rem;
 }
 
 *,

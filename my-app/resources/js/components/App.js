@@ -4,6 +4,7 @@ import Header from "./Header";
 import MenuNavigation from "./MenuNavigation";
 import Headline from "./Headline";
 import Featured from "./Featured";
+import Discover from "./Discover";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <MenuNavigation />
             <Headline />
             <Featured />
+            <Discover />
         </>
     );
 }
