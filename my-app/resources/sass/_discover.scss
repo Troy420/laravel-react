@@ -5,4 +5,68 @@
     .title {
         font-size: 2rem;
     }
+
+    .tabs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .tab-1,
+        .tab-2,
+        .tab-3,
+        .tab-4 {
+            padding: 20px;
+            font-size: 1.75rem;
+            text-align: center;
+            border-bottom: 2px solid gray;
+
+            &.active {
+                border-bottom: 2px solid #000;
+                .item-title {
+                    color: #000;
+                }
+            }
+
+            .item-title {
+                color: gray;
+            }
+        }
+    }
+
+    .grid-container {
+        max-height: 450px;
+        display: flex;
+
+        .wrapper {
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+                "left top"
+                "left bottom";
+
+            .left {
+                grid-area: left;
+                padding: 10px;
+                display: grid;
+                align-items: center;
+            }
+
+            .top {
+                grid-area: top;
+                padding: 20px;
+            }
+
+            .bottom {
+                grid-area: bottom;
+                padding: 20px;
+            }
+
+            .img-wrapper {
+                height: 150px;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
 }

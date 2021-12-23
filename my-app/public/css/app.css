@@ -100,6 +100,66 @@
 .discover .title {
   font-size: 2rem;
 }
+.discover .tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.discover .tabs .tab-1,
+.discover .tabs .tab-2,
+.discover .tabs .tab-3,
+.discover .tabs .tab-4 {
+  padding: 20px;
+  font-size: 1.75rem;
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+.discover .tabs .tab-1.active,
+.discover .tabs .tab-2.active,
+.discover .tabs .tab-3.active,
+.discover .tabs .tab-4.active {
+  border-bottom: 2px solid #000;
+}
+.discover .tabs .tab-1.active .item-title,
+.discover .tabs .tab-2.active .item-title,
+.discover .tabs .tab-3.active .item-title,
+.discover .tabs .tab-4.active .item-title {
+  color: #000;
+}
+.discover .tabs .tab-1 .item-title,
+.discover .tabs .tab-2 .item-title,
+.discover .tabs .tab-3 .item-title,
+.discover .tabs .tab-4 .item-title {
+  color: gray;
+}
+.discover .grid-container {
+  max-height: 450px;
+  display: flex;
+}
+.discover .grid-container .wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "left top" "left bottom";
+}
+.discover .grid-container .wrapper .left {
+  grid-area: left;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+}
+.discover .grid-container .wrapper .top {
+  grid-area: top;
+  padding: 20px;
+}
+.discover .grid-container .wrapper .bottom {
+  grid-area: bottom;
+  padding: 20px;
+}
+.discover .grid-container .wrapper .img-wrapper {
+  height: 150px;
+}
+.discover .grid-container .wrapper .img-wrapper img {
+  height: 100%;
+}
 
 *,
 ::after,
@@ -126,4 +186,16 @@ li {
 
 a {
   text-decoration: none;
+}
+
+button,
+input[type=submit],
+input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
